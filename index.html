@@ -7,31 +7,27 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="container">
-        <div id="screen"></div>
-        <div id="buttons">
-            <div ><button class="button">AC</button></div>
-            <div ><button class="button">()</button></div>
-            <div ><button class="button">%</button></div>
-            <div ><button class="button">/</button></div>
-            <div ><button class="button">x</button></div>
-            <div ><button class="button">7</button></div>
-            <div ><button class="button">8</button></div>
-            <div ><button class="button">9</button></div>
-            <div ><button class="button">-</button></div>
-            <div ><button class="button">4</button></div>
-            <div ><button class="button">5</button></div>
-            <div ><button class="button">6</button></div>
-            <div ><button class="button">+</button></div>
-            <div ><button class="button">1</button></div>
-            <div ><button class="button">2</button></div>
-            <div ><button class="button">3</button></div>
-            <div ><button class="button">=</button></div>
-            <div ><button class="button">.</button></div>
-            <div ><button class="button">+/-</button></div>
-            <div ><button class="button">0</button></div>
-        </div>
+    <div id="calculator">
+        <input type="text" id="display" disabled>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('2')">2</button>
+        <button onclick="appendNumber('3')">3</button>
+        <button onclick="appendNumber('4')">4</button>
+        <button onclick="appendNumber('5')">5</button>
+        <button onclick="appendNumber('6')">6</button>
+        <button onclick="appendNumber('7')">7</button>
+        <button onclick="appendNumber('8')">8</button>
+        <button onclick="appendNumber('9')">9</button>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="selectOperation(add)">+</button>
+        <button onclick="selectOperation(subtract)">-</button>
+        <button onclick="selectOperation(multiply)">*</button>
+        <button onclick="selectOperation(divide)">/</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="clearDisplay()">C</button>
+        <button onclick="appendNumber('.')">.</button>
     </div>
+    <script src="script.js"></script>
     
 </body>
 </html>
