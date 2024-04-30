@@ -24,7 +24,9 @@ body{
      font-size: 4rem;
      text-align: right;
      border: none;
-     background-color: hsl(0, 0%, 20%);
+     background-color: hsl(0, 0%, 30%);
+     color: white;
+     margin-top: 20px;
 }
 #keys{
     display: grid;
@@ -54,15 +56,15 @@ button:active{
 }
 
 .operator{
-    background-color: hsl(29, 96%, 50%);
+    background-color: hsl(160, 90%, 40%);
 
 }
 .operator:hover{
-    background-color: hsl(29, 96%, 60%);
+    background-color: hsl(160, 96%, 50%);
 }
 
 .operator:active{
-    background-color: hsl(29, 96%, 70%);
+    background-color: hsl(160, 96%, 60%);
 }
 
 #equals {
