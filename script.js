@@ -79,3 +79,25 @@ function divide(x, y) {
         return "Cannot divide by zero!";
     }
 }
+
+function percentage() {
+    if (currentInput !== '') {
+        currentInput = String(parseFloat(currentInput) / 100);
+        updateDisplay();
+    }
+}
+
+
+function negate() {
+    if (currentInput !== '') {
+        // If the current input is the first number in an expression or starts with a negative sign
+        if (result === null && operation === null || currentInput.startsWith('-')) {
+            currentInput = String(parseFloat(currentInput) * -1);
+        } else {
+            currentInput = '-' + currentInput;
+        }
+        updateDisplay();
+    }
+}
+
+
